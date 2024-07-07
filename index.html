@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Dice Roller</h1>
+        <div class="form-container">
+            <label for="numOfDice">Number of Dice:</label>
+            <input type="number" id="numOfDice" value="1" min="1">
+            <button id="rollButton" onclick="rollDice()">Roll Dice</button>
+        </div>
+        <div id="diceResult"></div>
+        <div id="diceImages"></div>
+    </div>
+    <script src="Javascript/index.js"></script>
+</body>
+</html>

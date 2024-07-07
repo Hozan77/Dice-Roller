@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+#container {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between; /* Adjusted to space between elements */
+    align-items: center;
+    margin-bottom: 5px; /* Adjusted margin-bottom */
+}
+
+label {
+    font-size: 1.25rem;
+    margin-right: 10px;
+}
+
+input {
+    font-size: 1.25rem;
+    width: 100px;
+    text-align: center;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #0056b3;
+}
+
+#rollButton {
+    font-size: 1.3rem;
+    padding: 10px 25px;
+    border-radius: 18px;
+    border: none;
+    background-color: hsl(45, 100%, 50%);
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(255, 215, 0, 0.6);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#rollButton:hover {
+    background-color: hsl(45, 100%, 60%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4), 0 6px 20px rgba(255, 215, 0, 0.8);
+}
+
+#rollButton:active {
+    background-color: hsl(45, 100%, 70%);
+    transform: scale(0.98);
+}
+
+#diceResult {
+    margin: 25px;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+#diceImages img {
+    width: 100px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+#diceImages img:hover {
+    transform: scale(1.1);
+}
